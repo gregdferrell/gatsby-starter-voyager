@@ -1,0 +1,32 @@
+@import "../styles/main.scss";
+
+.post {
+  @extend .bg-very-light-gray;
+  @extend .br3, .dark-gray, .flex, .flex-column, .items-center, .mv3, .pa4;
+  @extend .flex-row-l;
+}
+
+.post:hover {
+  @extend .text-color-secondary;
+
+  background: $color-primary;
+}
+
+.post-column {
+  @extend .w-100, .tc;
+  @extend .w-50-l, .pa3-l;
+}
+
+.title {
+  @extend .f2, .fw1, .lh-copy, .ma0;
+
+  font-family: "Mansalva", cursive;
+}
+
+.subtitle {
+  @extend .f4, .i, .ma0, .mt3;
+}
+
+.tags {
+  @extend .flex, .flex-wrap, .justify-center, .i, .ma0;
+}

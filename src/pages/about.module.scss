@@ -1,0 +1,12 @@
+@import "../styles/main.scss";
+
+.final-section-wrapper {
+  background-color: $color-tertiary-light;
+
+  @extend .mb5, .pa5;
+  @extend .mb6-l;
+
+  p {
+    @extend .center, .measure, .tc;
+  }
+}

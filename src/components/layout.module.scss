@@ -1,0 +1,15 @@
+@import "../styles/main.scss";
+
+.layout {
+  // Header is fixed at 66px on large screens, and 102px on smaller screens
+  margin-top: 102px;
+  @media screen and (min-width: 60em) {
+    margin-top: 66px;
+  }
+}
+
+.layout-narrow {
+  @extend .layout, .standard-page-width;
+
+  @extend .center;
+}

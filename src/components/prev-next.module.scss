@@ -1,0 +1,21 @@
+@import "../styles/main.scss";
+
+.container {
+  @extend .flex, .justify-between, .mt5, .mb5;
+}
+
+.title-text {
+  @extend .gray;
+}
+
+.link {
+  @extend .dark-gray, .f4;
+
+  &:hover {
+    @extend .text-color-secondary;
+  }
+}
+
+.link-arrow-icon {
+  @extend .mh1, .v-mid;
+}

@@ -1,0 +1,24 @@
+@import "../styles/main.scss";
+
+.section-wrapper {
+  @extend .bg-primary;
+
+  @extend .center, .flex, .flex-column, .items-center, .mb5;
+  @extend .flex-row-l, .mb6-l;
+}
+
+.copy-wrapper {
+  @extend .order-1, .pa2, .tc, .w-90;
+  @extend .pa4-l, .tl-l, .w-50-l;
+}
+
+.image-wrapper {
+  @extend .order-5, .pa2, .w-90;
+  @extend .w-50-l;
+}
+
+.image-wrapper-first {
+  @extend .image-wrapper;
+
+  @extend .order-0-l;
+}

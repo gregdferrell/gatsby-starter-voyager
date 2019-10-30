@@ -1,0 +1,9 @@
+@import "../styles/main.scss";
+
+div.wrapper {
+  @extend .mv4, .tc;
+}
+
+.link {
+  @extend .button-base;
+}

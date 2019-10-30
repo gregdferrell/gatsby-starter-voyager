@@ -1,0 +1,63 @@
+@import "../styles/main.scss";
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-wrapper {
+  @extend .sticky-header;
+
+  @extend .bg-white;
+
+  // Header is fixed at 66px on large screens, and 102px on smaller screens
+  // If this changes, change the layout margin as well to match
+  height: 102px;
+  @media screen and (min-width: 60em) {
+    height: 66px;
+  }
+
+  border-bottom: 1px solid $color-secondary;
+}
+
+.header {
+  @extend .center;
+
+  @extend .standard-page-width;
+}
+
+.nav-main {
+  @extend .border-box, .db, .pa3, .w-100;
+  @extend .dt-l;
+}
+
+.nav-home-link {
+  @extend .text-color-secondary;
+
+  @extend .bb, .db, .f3, .mb2, .no-underline, .pb2, .tc, .ttu, .v-mid;
+  @extend .bb-0-l, .dtc-l, .pb0-l, .tl-l;
+
+  &:hover {
+    @extend .text-color-secondary;
+  }
+
+  font-family: "Rock Salt", cursive;
+}
+
+.nav-item-list {
+  @extend .db, .tc, .v-mid, .w-100;
+  @extend .dtc-l, .tr-l, .w-75-l;
+}
+
+.nav-item {
+  @extend .nav-link;
+
+  @extend .dib, .ml3;
+  @extend .ml4-l;
+}
+
+.nav-item-active {
+  @extend .fw6, .text-color-secondary;
+}

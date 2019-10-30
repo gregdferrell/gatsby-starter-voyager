@@ -1,0 +1,18 @@
+@import "../styles/main.scss";
+
+.featured-tag-item {
+  @extend .center, .mt3, .ph3, .w-100;
+  @extend .w-50-m;
+  @extend .w-25-l;
+
+  transition: all 0.3s ease-in-out;
+
+  a {
+    @extend .no-underline;
+  }
+
+  &:hover {
+    @extend .bg-primary, .br4;
+    transform: scale(1.03);
+  }
+}

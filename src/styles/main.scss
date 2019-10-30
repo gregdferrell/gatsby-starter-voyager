@@ -1,0 +1,154 @@
+// ********** Tachyons -this includes normalize.css
+
+@import "../../node_modules/tachyons-sass/tachyons.scss";
+
+// ********** Colors
+
+$color-primary: #e6eaf3;
+$color-secondary: #9c7c38;
+$color-tertiary: #38589c;
+$color-tertiary-light: #cdd5e6;
+
+// ********** Fonts
+
+// Base Font
+// font-family: "Open Sans", sans-serif;
+
+// Font for hero text on index
+// font-family: 'Rock Salt', cursive;
+
+// Font for custom headers
+// font-family: 'Mansalva', cursive;
+
+// Font for block quote
+// font-family: 'Lily Script One', cursive;
+
+// ********** Customise Standard Elements
+
+body {
+  @extend .bg-white, .dark-gray, .f4;
+
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  @extend .lh-copy;
+}
+
+li {
+  @extend .lh-copy;
+}
+
+a {
+  @extend .dark-gray, .dim;
+
+  &:hover {
+    @extend .text-color-secondary;
+  }
+}
+
+blockquote {
+  @extend .text-color-secondary;
+
+  @extend .ma0, .pt2, .ph3, .pb2, .relative;
+  @extend .pt3-m, .ph4-m, .pb3-m;
+  @extend .pt4-l, .ph5-l, .pb4-l;
+  @extend .mh3-ns, .mv2-ns;
+}
+
+blockquote p {
+  @extend .f2, .fw5, .tc;
+}
+
+blockquote cite {
+  @extend .f5, .fs-normal, .tracked, .ttu;
+}
+
+blockquote:before {
+  content: '"';
+  color: rgba(0, 0, 0, 0.1);
+  font-family: "Lily Script One", cursive;
+  font-size: 260px;
+  left: 0;
+  position: absolute;
+}
+
+// ********** Standard Page Width
+
+.standard-page-width {
+  @extend .w-100;
+  @extend .w-90-ns;
+  @extend .mw8-l;
+}
+
+// ********** Custom Classes
+
+// background colors
+
+.bg-primary {
+  background-color: $color-primary;
+}
+
+.bg-very-light-gray {
+  background-color: #f4f4f4;
+}
+
+// text colors
+
+.text-color-secondary {
+  color: $color-secondary;
+}
+
+// custom headings
+
+h1.page-heading {
+  @extend .f1, .fw1, .mb4, .mt6, .tc;
+
+  font-family: "Mansalva", cursive;
+}
+
+h2.section-heading {
+  @extend .db, .f2, .fw1, .lh-copy, .mb3, .tc;
+
+  font-family: "Mansalva", cursive;
+}
+
+h3.section-sub-heading {
+  font-family: "Mansalva", cursive;
+}
+
+// links and buttons
+
+.nav-link {
+  @extend .f5, .no-underline;
+}
+
+.button-base {
+  @extend .br2, .ba, .f5, .pa3, .white;
+  background-color: $color-tertiary;
+
+  &:hover {
+    border-color: $color-secondary;
+    color: white;
+  }
+}
+
+.icon-base {
+  @extend .dark-gray, .dim, .v-mid;
+
+  &:hover {
+    @extend .text-color-secondary;
+  }
+}
+
+.icon {
+  @extend .icon-base;
+
+  @extend .f4;
+}
+
+.icon-large {
+  @extend .icon-base;
+
+  @extend .f3;
+}

@@ -1,0 +1,60 @@
+//
+// Use this SCSS file to create a customizable JustComments theme 
+// as described here: https://just-comments.com/docs.html
+//
+
+div.my-just-comments-theme {
+  // My colors (from main.scss)
+  --color-primary: #e6eaf3;
+  --color-secondary: #9c7c38;
+  --color-tertiary: #38589c;
+  --color-tertiary-light: #cdd5e6;
+  --color-dark-gray: #333;
+
+  // Begin JustComments theme
+  --border-color: #ededed;
+
+  --primary-bg-color: #fff;
+  --secondary-bg-color: #fff;
+  --secondary-bg-color-lighter: #fff;
+
+  --primary-color: var(--color-tertiary);
+  --primary-color-lighter: #fff;
+  --primary-color-light: #fff;
+
+  --primary-text-color: var(--color-dark-gray);
+  --secondary-text-color: var(--color-tertiary);
+
+  --outline-style: none;
+  --outline-offset: none;
+
+  --button-border-radius: 0.25rem;
+  --input-border-radius: 0.25rem;
+  --bubble-border-radius: 0.5rem;
+  --user-pic-border-radius: 50%;
+
+  --font-heading1-size: 1.5rem;
+  --font-heading1-line-height: 2rem;
+  --font-heading2-size: 1rem;
+  --font-heading2-line-height: 1rem;
+
+  --font-button1-size: 1rem;
+  --font-button1-line-height: 1.5rem;
+  --font-button2-size: 1rem;
+  --font-button2-line-height: 1.25rem;
+  --font-button3-size: 1rem;
+  --font-button3-line-height: 1.25rem;
+
+  --font-text1-size: 1.25rem;
+  --font-text1-line-height: 1.5rem;
+  --font-text2-size: 1rem;
+  --font-text2-line-height: 1.5rem;
+  --font-text3-size: 0.75rem;
+  --font-text3-line-height: 1.25rem;
+
+  --primary-button-color: #fff;
+  --primary-button-bg-color: var(--color-tertiary);
+  --primary-button-hover-color: #fff;
+  --primary-button-hover-bg-color: rgb(115, 134, 120, 0.5);
+  --primary-button-border: none;
+}

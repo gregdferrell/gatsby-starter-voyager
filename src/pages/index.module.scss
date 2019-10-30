@@ -1,0 +1,92 @@
+@import "../styles/main.scss";
+
+// Hero section
+
+.hero-section {
+  @extend .bg-very-light-gray;
+
+  @extend .flex, .flex-wrap, .items-center, .tc;
+}
+
+.hero-column {
+  @extend .center;
+  @extend .w-third-l;
+}
+
+.hero-column-first {
+  @extend .hero-column;
+
+  @extend .dn, .w-100;
+  @extend .db-l, .order-1-l;
+}
+
+.hero-column-second {
+  @extend .hero-column;
+
+  @extend .w-100;
+  @extend .order-1, .order-2-l;
+}
+
+.hero-column-third {
+  @extend .hero-column;
+
+  @extend .order-2, .pb4, .w-75;
+  @extend .order-3-l, .pb0-l;
+}
+
+.hero-title {
+  @extend .text-color-secondary;
+
+  @extend .dn, .f1, .fw5, .lh-copy, .ph4;
+  @extend .db-l;
+
+  font-family: "Rock Salt", cursive;
+}
+
+.hero-subtitle {
+  @extend .f2, .lh-copy, .ph4;
+
+  font-family: "Mansalva", cursive;
+}
+
+// Main feature section
+
+.main-feature-section {
+  @extend .center, .mt5, .ph4, .tc;
+  @extend .mt6-l, .ph5-l;
+
+  @extend .standard-page-width;
+}
+
+// Latest posts section
+
+.latest-posts-section {
+  @extend .center, .mv6;
+
+  @extend .standard-page-width;
+}
+
+// Feature tags sections
+
+.featured-tags-section {
+  @extend .mh2, .mt5;
+  @extend .mh4-l, .mt6-l;
+}
+
+// Subscribe section
+
+.subscribe-section {
+  @extend .mt5;
+  @extend .mt6-l;
+
+  @extend .bg-primary;
+}
+
+// About me section
+
+.about-me-section {
+  @extend .center, .mv5;
+  @extend .mv6-l;
+
+  @extend .standard-page-width;
+}

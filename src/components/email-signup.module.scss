@@ -1,0 +1,44 @@
+@import "../styles/main.scss";
+
+.signup-section {
+  @extend .pa4;
+  @extend .pa5-l;
+}
+
+.form {
+  @extend .center, .mw7, .pa4, .tc;
+  @extend .br2-ns;
+}
+
+.form-fieldset {
+  @extend .cf, .bn, .ma0, .pa0;
+}
+
+.form-input-email {
+  @extend .bg-white,
+    .black-80,
+    .bn,
+    .f6,
+    .fl,
+    .input-reset,
+    .lh-solid,
+    .pa3,
+    .w-100;
+  @extend .w-75-m;
+  @extend .f5-l, .w-80-l;
+  @extend .br2-ns, .br--left-ns;
+}
+
+.form-submit {
+  @extend .button-base;
+
+  @extend .bg-animate, .button-reset, .dim, .fl, .pointer, .tc, .w-100;
+  @extend .w-25-m;
+  @extend .f5-l, .w-20-l;
+  @extend .br2-ns, .br--right-ns;
+
+  &:hover {
+    border-color: $color-secondary;
+    color: white;
+  }
+}

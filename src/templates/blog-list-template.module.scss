@@ -1,0 +1,9 @@
+@import "../styles/main.scss";
+
+.header {
+  @extend .tc;
+}
+
+.title {
+  @extend .page-heading;
+}

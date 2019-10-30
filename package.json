@@ -1,0 +1,55 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
+    "forestry:preview": "gatsby develop -H 0.0.0.0 -p 8080"
+  },
+  "dependencies": {
+    "gatsby": "^2.15.19",
+    "gatsby-cli": "^2.8.3",
+    "gatsby-image": "^2.2.21",
+    "gatsby-plugin-catch-links": "^2.1.15",
+    "gatsby-plugin-feed": "^2.3.15",
+    "gatsby-plugin-google-analytics": "^2.1.21",
+    "gatsby-plugin-just-comments": "^0.2.3",
+    "gatsby-plugin-manifest": "^2.2.23",
+    "gatsby-plugin-offline": "^3.0.16",
+    "gatsby-plugin-react-helmet": "^3.1.11",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sass": "^2.1.15",
+    "gatsby-plugin-sharp": "^2.2.25",
+    "gatsby-plugin-sitemap": "^2.2.16",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-remark-external-links": "0.0.4",
+    "gatsby-remark-images": "^3.1.23",
+    "gatsby-remark-relative-images": "^0.2.3",
+    "gatsby-source-filesystem": "^2.1.26",
+    "gatsby-transformer-remark": "^2.6.24",
+    "gatsby-transformer-sharp": "^2.2.17",
+    "node-sass": "^4.12.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "react-icons": "^3.7.0",
+    "tachyons-sass": "^4.9.5"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

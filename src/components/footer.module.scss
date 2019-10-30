@@ -1,0 +1,57 @@
+@import "../styles/main.scss";
+
+.footer-wrapper {
+  @extend .bg-primary;
+
+  border-top: 1px solid $color-secondary;
+}
+
+.footer {
+  @extend .standard-page-width;
+
+  @extend .center, .flex, .flex-column, .items-baseline, .ph2, .pv5;
+  @extend .flex-row-l, .justify-between-l;
+}
+
+.footer-column {
+  @extend .center, .w-100;
+  @extend .w-third-l;
+}
+
+.footer-column-name {
+  @extend .footer-column;
+
+  @extend .tc;
+  @extend .tl-l;
+}
+
+.footer-column-links {
+  @extend .footer-column;
+
+  @extend .mv3, .tc;
+}
+
+.nav-item {
+  @extend .nav-link;
+
+  @extend .db, .mb3;
+}
+
+.footer-column-social {
+  @extend .footer-column;
+
+  @extend .tc;
+  @extend .tr-l;
+
+  a {
+    @extend .mh2, .ml4-l, .mr0-l;
+  }
+}
+
+.name {
+  @extend .text-color-secondary;
+
+  @extend .f3, .fw5;
+
+  font-family: "Rock Salt", cursive;
+}
