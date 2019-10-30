@@ -11,7 +11,7 @@ tag_details:
 - name: travel
   description: ""
   featured: false
-  featured_image: ''
+  # featured_image: ''
   featured_image_alt: ''
 - name: europe
   description: ''
@@ -26,12 +26,12 @@ tag_details:
 - name: spain
   description: ''
   featured: false
-  featured_image: ''
+  # featured_image: ''
   featured_image_alt: ''
 - name: puerto-rico
   description: "Sed maximus vitae sapien eget posuere. Sed convallis orci sit amet sapien ornare congue. Vivamus gravida, purus quis tincidunt ornare, augue odio pretium enim, at semper massa nisi ut massa. Fusce porttitor consequat nisi, vitae feugiat nisi tempus non. Nunc laoreet felis porta turpis iaculis vulputate."
   featured: false
-  featured_image: ''
+  # featured_image: ''
   featured_image_alt: ''
 - name: architecture
   description: "Integer lobortis nulla lorem, sed facilisis tellus hendrerit efficitur. Suspendisse dictum libero sed ligula malesuada tempus. Donec urna velit, pulvinar ac porttitor non, ultrices id nisi."
