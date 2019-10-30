@@ -1,0 +1,20 @@
+@import "../../styles/main.scss";
+
+.author-section {
+  @extend .flex, .flex-wrap, .justify-center, .mb4;
+}
+
+.author-wrapper {
+  @extend .bg-very-light-gray;
+  @extend .br4, .dark-gray, .ma3, .pa3;
+  @extend .ma4-l, .pa4-l;
+
+  h2 {
+    @extend .ma0, .pa0;
+  }
+
+  &:hover {
+    @extend .text-color-secondary;
+    background: $color-primary;
+  }
+}

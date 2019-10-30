@@ -3,7 +3,7 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 
 import Layout from "../../components/layout"
 
-import styles from "./tags.module.scss"
+import styles from "./authors.module.scss"
 
 const Authors = () => {
   const data = useStaticQuery(graphql`
@@ -20,11 +20,11 @@ const Authors = () => {
   return (
     <Layout title="All Blog Authors" pathName="/blog/authors">
       <h1 className="page-heading">Authors</h1>
-      <section className={styles.tagSection}>
+      <section className={styles.authorSection}>
         {data.allMarkdownRemark.group.map(author => (
           <div key={author.fieldValue}>
             <Link to={`/blog/authors/${author.fieldValue}`}>
-              <div className={styles.tagWrapper}>
+              <div className={styles.authorWrapper}>
                 <h2 className="section-heading">
                   {author.fieldValue} ({author.totalCount})
                 </h2>
