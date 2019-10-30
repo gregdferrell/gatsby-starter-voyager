@@ -4,6 +4,8 @@ Gatsby Starter Voyager is feature-rich starter blog. It's MIT licensed and ready
 
 Demo: ???
 
+![](./voyager-home.png)
+
 # Development
 
 ## Dev Env
