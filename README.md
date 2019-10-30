@@ -2,7 +2,7 @@
 
 Gatsby Starter Voyager is feature-rich starter blog. It's MIT licensed and ready to be used as-is or as a starting point from which to build something grander. Use it, learn from it, build on it & enjoy.
 
-<p style="text-align: center">&gt; &gt; &gt; <a href="https://gatsby-starter-voyager.netlify.com">View Demo</a> &lt; &lt; &lt;</p>
+### [View Demo](https://gatsby-starter-voyager.netlify.com)
 
 ![gatsby starer voyager home page](./voyager-home.png)
 
