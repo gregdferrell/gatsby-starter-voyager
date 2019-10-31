@@ -41,6 +41,7 @@ export const queryPostBySlug = graphql`
     }
     site: site {
       siteMetadata {
+        justCommentsApiKey
         siteUrl
         social {
           twitter
@@ -122,7 +123,7 @@ const BlogPosts = ({ data, pageContext }) => {
           />
         </div>
 
-        <Comments />
+        {data.site.siteMetadata.justCommentsApiKey && <Comments />}
 
         <PrevNext prevDetails={prevDetails} nextDetails={nextDetails} />
       </article>
