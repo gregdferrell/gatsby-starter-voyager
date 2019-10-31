@@ -20,7 +20,7 @@ module.exports = {
       twitter: "",
     },
     mailchimpUrl: "",
-    justCommentsApiKey: "",
+    justCommentsApiKey: "invalid-api-key-so-you-can-see-the-comment-form",
   },
   plugins: [
     {

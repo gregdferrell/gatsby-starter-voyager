@@ -93,7 +93,7 @@ Here are the minimal steps you'll need to take to re-brand and re-configure the 
 
 ## Configuration
 
-**gatsby-config.js siteMetadata**
+**gatsby-config.js: siteMetadata**
 
 | Property | Description |
 |----------|-------------|
@@ -105,12 +105,12 @@ Here are the minimal steps you'll need to take to re-brand and re-configure the 
 | image | the default image used by the SEO component for meta tags, social sharing and structured data; image must be square |
 | bannerImage | the default banner image used by the SEO component for structured data; image must be 600x60 px |
 | blogPostsPerPage | the number of blog posts to show per paginated blog listing page (blog, author, tag listing pages, not used by the index page) |
-| social.instagram | instagram handle; will be added to the header & footer instagram link |
-| social.twitter | twitter handle; will be added to the header and footer twitter link |
-| mailchimpUrl | the mailchimp subscription link; it can be found in the mailchimp dashboard under audience->forms; it will be a format like the following: `https://<MAILCHIMP-USERNAME>.us20.list-manage.com/subscribe/post?u=<MAILCHIMP-USER-ID>` |
-| justCommentsApiKey | the API key associated with your JustComments account; removing this completely will remove the comments component from your blog page; and invalid key will show it (so you can see it), but it will not work |
+| social.instagram | your instagram handle; will be added to the header & footer instagram link |
+| social.twitter | your twitter handle; will be added to the header and footer twitter link |
+| mailchimpUrl | your [mailchimp](https://mailchimp.com/) subscription link; it can be found in the mailchimp dashboard under audience->forms; it will be a format like the following: `https://<MAILCHIMP-USERNAME>.us20.list-manage.com/subscribe/post?u=<MAILCHIMP-USER-ID>` |
+| justCommentsApiKey | your [JustComments](https://just-comments.com/) API key; removing this completely will remove the comments component from your blog page; and invalid key will show it (so you can see it), but it will not work |
 
-**gatsby-config.js plugins**
+**gatsby-config.js: plugins**
 
 - Uncomment and configure `gatsby-plugin-google-analytics` with your own trackingId and cookieDomain
 - Rebrand your manifest in `gatsby-plugin-manifest` as mentioned above.
