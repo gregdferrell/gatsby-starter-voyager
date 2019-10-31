@@ -7,15 +7,13 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://gatsby-starter-voyager.netlify.com",
-    // SEO
     author: "gregdferrell",
     publisher: "gatsby-starter-voyager.netlify.com",
     title: "Voyager",
     description:
       "Gatsby Starter Voyager is feature-rich starter blog. It's MIT licensed and ready to be used as-is or as a starting point from which to build something grander. Use it, learn from it, build on it & enjoy.",
-    image: "/images/nadi-whatisdelirium-3VTZloIMFP0-unsplash.jpg", // default (square) image used by SEO component when another image isn't specified
-    bannerImage: "/images/banner.png", // banner image 600x60 px
-    // Other Config
+    image: "/images/logo.jpg",
+    bannerImage: "/images/banner.png",
     blogPostsPerPage: 5,
     social: {
       instagram: "",
@@ -142,7 +140,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Voyager RSS Feed",
+            title: "RSS Feed",
           },
         ],
       },
@@ -180,7 +178,7 @@ module.exports = {
         theme_color: "#9c7c38",
         display: "minimal-ui",
         // optional
-        icon: "content/images/nadi-whatisdelirium-3VTZloIMFP0-unsplash.jpg",
+        icon: "static/images/logo.jpg",
         include_favicon: false,
       },
     },
