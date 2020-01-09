@@ -21,11 +21,8 @@ export const query = graphql`
 
     posts: allMarkdownRemark(
       filter: {
-        frontmatter: {
-          type: { eq: "post" }
-          published: { eq: true }
-          tags: { in: [$tag] }
-        }
+        frontmatter: { type: { eq: "post" }, tags: { in: [$tag] } }
+        published: { eq: true }
       }
       limit: $limit
       skip: $skip

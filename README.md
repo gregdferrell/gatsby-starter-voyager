@@ -136,7 +136,7 @@ To add a blog post, create a new markdown file in `content/copy/blog-posts`. Her
 ```yaml
 ---
 type: post # required; should be "post"
-published: true # flag to determine whether or not to display
+draft: false # flag to determine if this is a draft post and thus should not be displayed in production
 title: Barcelona, Spain # title of the page; also used by SEO component
 author: Maya # author; blog list pages are created for each author; also used by SEO component
 date: 2019-08-25 # date; also used by SEO component
@@ -199,6 +199,7 @@ This site was built with open source and free images. It, too, is open and free 
   - [Jamie Haughton](https://unsplash.com/@haughters)
   - [Jonathan Riley](https://unsplash.com/@jonathan_christian_photography)
   - [Jorge Salvador](https://unsplash.com/@jsshotz)
+  - [Joseph Barrientos](https://unsplash.com/@jbcreate_)
   - [Luca Bravo](https://unsplash.com/@lucabravo)
   - [Michael Cadieux](https://unsplash.com/@michaelcadieux)
   - [Nadi Whatisdelirium](https://unsplash.com/@whatisdelirium)

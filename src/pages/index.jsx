@@ -101,7 +101,10 @@ const IndexPage = ({ data }) => {
 export const query = graphql`
   query {
     latestPosts: allMarkdownRemark(
-      filter: { frontmatter: { type: { eq: "post" }, published: { eq: true } } }
+      filter: {
+        frontmatter: { type: { eq: "post" } }
+        published: { eq: true }
+      }
       limit: 3
       sort: { fields: frontmatter___date, order: DESC }
     ) {

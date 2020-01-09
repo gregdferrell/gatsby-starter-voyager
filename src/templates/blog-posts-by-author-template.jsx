@@ -9,7 +9,10 @@ import Button from "../components/button"
 export const query = graphql`
   query($author: String!, $skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      filter: { frontmatter: { type: { eq: "post" }, published: { eq: true }, author: { in: [$author] } } }
+      filter: {
+        frontmatter: { type: { eq: "post" }, author: { in: [$author] } }
+        published: { eq: true }
+      }
       limit: $limit
       skip: $skip
       sort: { fields: [frontmatter___date], order: DESC }
@@ -67,7 +70,10 @@ const Authors = ({ data, pageContext }) => {
       }
 
   return (
-    <Layout title={`Articles by ${author} - Page ${currentPage}`} pathName={`/blog/authors/${author}`}>
+    <Layout
+      title={`Articles by ${author} - Page ${currentPage}`}
+      pathName={`/blog/authors/${author}`}
+    >
       <header className="tc">
         <h1 className="page-heading">Articles by {author}</h1>
         <div className="mt5">

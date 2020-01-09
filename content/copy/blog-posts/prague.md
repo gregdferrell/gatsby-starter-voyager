@@ -1,6 +1,6 @@
 ---
 type: post
-published: true
+draft: false
 title: Prague, Czech Republic
 author: Maya
 date: 2019-03-02

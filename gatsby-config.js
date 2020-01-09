@@ -120,7 +120,7 @@ module.exports = {
             query: `
               {
                 allMarkdownRemark(
-                  filter: { frontmatter: { type: { eq: "post" }, published: { eq: true } } }
+                  filter: { frontmatter: { type: { eq: "post" } } published: { eq: true }}
                   sort: { order: DESC, fields: [frontmatter___date] }
                 ) {
                   edges {

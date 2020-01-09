@@ -13,7 +13,7 @@ import styles from "./blog-post-template.module.scss"
 export const queryPostBySlug = graphql`
   query($slug: String!) {
     post: markdownRemark(
-      frontmatter: { type: { eq: "post" }, published: { eq: true } }
+      frontmatter: { type: { eq: "post" } }
       fields: { slug: { eq: $slug } }
     ) {
       frontmatter {
@@ -21,6 +21,7 @@ export const queryPostBySlug = graphql`
         author
         date
         dateFormattedPretty: date(formatString: "MMMM Do, YYYY")
+        draft
         tags
         excerpt
         image {
@@ -84,6 +85,11 @@ const BlogPosts = ({ data, pageContext }) => {
       <article className="ph4">
         <header className={styles.header}>
           <h1 className={styles.title}>{post.frontmatter.title}</h1>
+          {post.frontmatter.draft && (
+            <div className={styles.draft}>
+              <span>! This post is a draft and will not be published in production !</span>
+            </div>
+          )}
           <div>
             <span className={styles.subtitle}>
               by{" "}

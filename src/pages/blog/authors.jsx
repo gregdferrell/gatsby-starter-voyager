@@ -8,7 +8,7 @@ import styles from "./authors.module.scss"
 const Authors = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(filter: { frontmatter: { type: { eq: "post" }, published: { eq: true } } }) {
+      allMarkdownRemark(filter: { frontmatter: { type: { eq: "post" } } published: { eq: true } }) {
         group(field: frontmatter___author) {
           fieldValue
           totalCount

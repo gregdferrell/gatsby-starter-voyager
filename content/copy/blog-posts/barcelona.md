@@ -1,6 +1,6 @@
 ---
 type: post
-published: true
+draft: false
 title: Barcelona, Spain
 author: Maya
 date: 2019-08-25

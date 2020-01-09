@@ -1,6 +1,6 @@
 ---
 type: post
-published: true
+draft: false
 title: Costa Brava, Spain
 author: Savannah
 date: 2019-05-23

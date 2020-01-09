@@ -1,5 +1,31 @@
 const path = require("path")
 
+const { GraphQLBoolean } = require("gatsby/graphql")
+
+// Add `published` property to MarkdownRemark nodes to indicate if this markdown is to be published.
+module.exports.setFieldsOnGraphQLNodeType = ({ type }) => {
+  if ("MarkdownRemark" === type.name) {
+    return {
+      published: {
+        type: GraphQLBoolean,
+        resolve: ({ frontmatter }) => {
+          // Always set `published` field to true when not in production mode
+          // or if frontmatter.draft is not set.
+          if (
+            process.env.NODE_ENV !== "production" ||
+            frontmatter.draft == undefined
+          ) {
+            return true
+          }
+
+          return !frontmatter.draft
+        },
+      },
+    }
+  }
+  return {}
+}
+
 module.exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
 
@@ -36,7 +62,10 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const res = await graphql(`
     query {
       postsRemark: allMarkdownRemark(
-        filter: { frontmatter: { type: { eq: "post" }, published: { eq: true } } }
+        filter: {
+          frontmatter: { type: { eq: "post" } }
+          published: { eq: true }
+        }
         sort: { fields: frontmatter___date, order: DESC }
       ) {
         edges {
@@ -68,7 +97,10 @@ module.exports.createPages = async ({ graphql, actions }) => {
       }
 
       tagsGroup: allMarkdownRemark(
-        filter: { frontmatter: { type: { eq: "post" }, published: { eq: true } } }
+        filter: {
+          frontmatter: { type: { eq: "post" } }
+          published: { eq: true }
+        }
       ) {
         group(field: frontmatter___tags) {
           fieldValue
@@ -77,7 +109,10 @@ module.exports.createPages = async ({ graphql, actions }) => {
       }
 
       authorsGroup: allMarkdownRemark(
-        filter: { frontmatter: { type: { eq: "post" }, published: { eq: true } } }
+        filter: {
+          frontmatter: { type: { eq: "post" } }
+          published: { eq: true }
+        }
       ) {
         group(field: frontmatter___author) {
           fieldValue

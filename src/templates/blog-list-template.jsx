@@ -10,7 +10,7 @@ import styles from "./blog-list-template.module.scss"
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      filter: { frontmatter: { type: { eq: "post" }, published: { eq: true } } }
+      filter: { frontmatter: { type: { eq: "post" } } published: { eq: true } }
       limit: $limit
       skip: $skip
       sort: { fields: frontmatter___date, order: DESC }

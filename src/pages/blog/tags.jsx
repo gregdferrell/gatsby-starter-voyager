@@ -8,7 +8,7 @@ import styles from "./tags.module.scss"
 const Tags = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(filter: { frontmatter: { type: { eq: "post" }, published: { eq: true } } }) {
+      allMarkdownRemark(filter: { frontmatter: { type: { eq: "post" } } published: { eq: true } }) {
         group(field: frontmatter___tags) {
           fieldValue
           totalCount

@@ -12,6 +12,16 @@
   @extend .gray;
 }
 
+.draft {
+  background-color: $color-tertiary-light;
+
+  @extend .ma3, .pa3;
+
+  span {
+    @extend .f5;
+  }
+}
+
 .tag-list-container {
   @extend .flex, .flex-wrap, .justify-center;
 
