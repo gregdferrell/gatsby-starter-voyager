@@ -2,6 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import { useLocalRemarkForm } from "gatsby-tinacms-remark"
+
 import Layout from "../components/layout"
 import Button from "../components/button"
 import BlogList from "../components/blog-list"
@@ -16,6 +18,61 @@ const IndexPage = ({ data }) => {
   let featuredTags = data.tagDetails.frontmatter.tag_details.filter(obj => {
     return obj.featured === true && obj.featured_image
   })
+
+  // Tinafy: create forms
+  const mainFeatureSectionForm = {
+    label: "Main Feature Section",
+    fields: [
+      {
+        label: "Heading",
+        name: "frontmatter.heading",
+        component: "text",
+      },
+      {
+        label: "Body",
+        name: "rawMarkdownBody",
+        component: "markdown",
+      },
+      {
+        label: "Button Text",
+        name: "frontmatter.linkText",
+        component: "text",
+      },
+      {
+        label: "Button URL",
+        name: "frontmatter.linkUrl",
+        component: "text",
+      },
+    ],
+  }
+
+  const aboutSectionForm = {
+    label: "About Section",
+    fields: [
+      {
+        label: "Heading",
+        name: "frontmatter.heading",
+        component: "text",
+      },
+      {
+        label: "Body",
+        name: "rawMarkdownBody",
+        component: "markdown",
+      },
+    ],
+  }
+
+  // Tinafy: call hook
+  const [mainFeatureSectionMarkdown] = useLocalRemarkForm(
+    data.mainFeatureSectionMarkdown,
+    mainFeatureSectionForm
+  )
+
+  const [aboutSectionMarkdown] = useLocalRemarkForm(
+    data.aboutSectionMarkdown,
+    aboutSectionForm
+  )
+
 
   return (
     <Layout layoutFullWidth title="Home">
@@ -193,6 +250,7 @@ export const query = graphql`
         linkText
       }
       html
+      ...TinaRemark
     }
 
     aboutSectionMarkdown: markdownRemark(
@@ -211,6 +269,7 @@ export const query = graphql`
         imageAlt
       }
       html
+      ...TinaRemark
     }
   }
 `
