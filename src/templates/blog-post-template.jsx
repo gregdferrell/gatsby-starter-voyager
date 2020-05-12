@@ -6,7 +6,6 @@ import Layout from "../components/layout"
 import PrevNext from "../components/prev-next"
 import Button from "../components/button"
 import SocialShare from "../components/social-share"
-import Comments from "../components/comments"
 
 import styles from "./blog-post-template.module.scss"
 
@@ -42,7 +41,6 @@ export const queryPostBySlug = graphql`
     }
     site: site {
       siteMetadata {
-        justCommentsApiKey
         siteUrl
         social {
           twitter
@@ -128,8 +126,6 @@ const BlogPosts = ({ data, pageContext }) => {
             shareUrl={`${data.site.siteMetadata.siteUrl}/blog/${post.fields.slug}`}
           />
         </div>
-
-        {data.site.siteMetadata.justCommentsApiKey && <Comments />}
 
         <PrevNext prevDetails={prevDetails} nextDetails={nextDetails} />
       </article>

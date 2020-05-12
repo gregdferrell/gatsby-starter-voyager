@@ -1,6 +1,6 @@
 # Gatsby Starter Voyager
 
-Gatsby Starter Voyager is feature-rich starter blog. It's MIT licensed and ready to be used as-is or as a starting point from which to build something grander. Use it, learn from it, build on it & enjoy.
+Gatsby Starter Voyager is feature-rich starter blog. It's MIT licensed and ready to be used as-is or as a starting point from which to build something bigger. Use it, learn from it, build on it & enjoy.
 
 ### [View Demo](https://gatsby-starter-voyager.netlify.com)
 
@@ -22,7 +22,6 @@ Gatsby Starter Voyager is feature-rich starter blog. It's MIT licensed and ready
 - rss feed at `/rss.xml`
 - support for email subscription to mailchimp campaign
 - support for google analytics
-- support for blog comments with JustComments
 - PWA/offline support
 
 # Development
@@ -89,7 +88,6 @@ Here are the minimal steps you'll need to take to re-brand and re-configure the 
     $color-tertiary-light: #cdd5e6;
 ```
   - Note, the value for `$color-secondary` is hard-coded into the `gatsby-plugin-manifest` as the theme color, so it needs to change there along with other properties in the manifest.
-  - The color variables are re-declared in `/src/styles/just-comments-override.scss` as well, so they need to be redefined there.
 
 ## Configuration
 
@@ -108,7 +106,6 @@ Here are the minimal steps you'll need to take to re-brand and re-configure the 
 | social.instagram | your instagram handle; will be added to the header & footer instagram link |
 | social.twitter | your twitter handle; will be added to the header and footer twitter link |
 | mailchimpUrl | your [mailchimp](https://mailchimp.com/) subscription link; it can be found in the mailchimp dashboard under `audience -> forms`; it will be a format like the following: `https://<MAILCHIMP-USERNAME>.us20.list-manage.com/subscribe/post?u=<MAILCHIMP-USER-ID>` |
-| justCommentsApiKey | your [JustComments](https://just-comments.com/) API key; removing this completely will remove the comments component from your blog page; and invalid key will show it (so you can see it), but it will not work |
 
 **gatsby-config.js: plugins**
 

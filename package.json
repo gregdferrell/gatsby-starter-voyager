@@ -19,7 +19,6 @@
     "gatsby-plugin-catch-links": "^2.1.15",
     "gatsby-plugin-feed": "^2.3.15",
     "gatsby-plugin-google-analytics": "^2.1.21",
-    "gatsby-plugin-just-comments": "^0.2.3",
     "gatsby-plugin-manifest": "^2.2.23",
     "gatsby-plugin-offline": "^3.0.16",
     "gatsby-plugin-react-helmet": "^3.1.11",
