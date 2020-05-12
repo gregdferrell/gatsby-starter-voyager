@@ -8,21 +8,17 @@ Gatsby Starter Voyager is feature-rich starter blog. It's MIT licensed and ready
 
 # Features
 
-- fast, with top-notch lighthouse audit scores
-- responsive, mobile-first design using `tachyons.scss`, flexbox, SCSS & CSS modules
-- blog posts, tags and other copy in markdown
-- tag listing page and pages for each tag
-- author listing page and pages for each author
-- pagination and next/prev navigation
-- social sharing links on blog posts (twitter, facebook, pinterest)
-- fast, optimized images
+- Beautiful starter blog with content in markdown
+- Responsive, mobile-first design using tachyons.scss, flexbox, SCSS & CSS modules
+- Fast, with top-notch lighthouse audit scores
+- View posts by tag & author
+- Pagination & next/prev navigation
+- Social sharing links on blog posts (twitter, facebook, pinterest)
 - SEO component with social sharing cards for twitter & facebook
-- structured data, schema.org
-- sitemap at `/sitemap.xml`
-- rss feed at `/rss.xml`
-- support for email subscription to mailchimp campaign
-- support for google analytics
-- PWA/offline support
+- Structured data, schema.org
+- Sitemap & RSS feed
+- Support for email subscription to Mailchimp campaign
+- Support for Google analytics
 
 # Development
 
