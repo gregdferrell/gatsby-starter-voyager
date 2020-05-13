@@ -11,7 +11,7 @@ module.exports = {
     publisher: "gatsby-starter-voyager.netlify.com",
     title: "Voyager",
     description:
-      "Gatsby Starter Voyager is feature-rich starter blog. It's MIT licensed and ready to be used as-is or as a starting point from which to build something grander. Use it, learn from it, build on it & enjoy.",
+      "Gatsby Starter Voyager is feature-rich starter blog. It's MIT licensed and ready to be used as-is or as a starting point from which to build something tailored to your needs. Use it, learn from it, build on it & enjoy.",
     image: "/images/logo.jpg",
     bannerImage: "/images/banner.png",
     blogPostsPerPage: 5,
